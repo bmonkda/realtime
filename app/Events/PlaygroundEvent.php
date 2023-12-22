@@ -33,4 +33,15 @@ class PlaygroundEvent implements ShouldBroadcast
             new Channel('public.playground.1'),
         ];
     }
+
+    public function broadcastAs(){
+        return 'playground';
+    }
+
+    public function broadcastWith(){
+        return [
+            'numero' => 123
+        ];
+    }
+
 }
