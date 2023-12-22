@@ -1,5 +1,6 @@
 <?php
 
+use BeyondCode\LaravelWebSockets\Apps\App;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,8 @@ Route::get('/', function () {
 });
 
 Route::view('home', 'home');
+
+Route::get('/playground', function(){
+    event(new \App\Events\PlaygroundEvent());
+    return null;
+});
