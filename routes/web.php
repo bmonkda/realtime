@@ -24,3 +24,7 @@ Route::get('/playground', function(){
     event(new \App\Events\PlaygroundEvent());
     return null;
 });
+
+Route::get('/ws', function(){
+    return view('websockets');
+});
