@@ -29,13 +29,7 @@ window.Echo = new Echo({
     wsPort: import.meta.env.VITE_PUSHER_PORT ?? 6001,
     wssPort: import.meta.env.VITE_PUSHER_PORT ?? 6001,
     // forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
-<<<<<<< HEAD
     forceTLS: false,
     enabledTransports: ['ws', 'wss'],
     disableStats: true,
-=======
-    forceTLS: faslse,
-    enabledTransports: ['ws', 'wss'],
-    disableStatus: true,
->>>>>>> b49a33e (Evento ChatMessageEvent y descomentando laravel-echo en bootstrap.js)
 });
