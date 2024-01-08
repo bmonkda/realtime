@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    {{-- @vite(['/resources/js/app.js']) --}}
+
+</head>
+
+<body>
+    <main class="d-flex align-center h-100vh">
+        <section id="section-login" class="d-flex flex-col justify-center align-center mx-auto card">
+            <form id="form-login" class="d-flex flex-col ">
+
+                <form id="form">
+
+                    <label for="input-message">Message:</label>
+                    <input id="input-message" type="text">
+                </form>
+            </form>
+        </section>
+
+        <section id="section-chat" class="d-flex flex-col justify-between align-center card mx-auto h-80 hide">
+
+            <nav id="nav-online" class="w-100 d-flex">
+
+                <h3 class="white pl-1">Chat</h3>
+
+                <div id="avatars">
+
+                    {{--                avatar --}}
+                    {{--                <span class="avatar">AL</span> --}}
+                    {{--                <span class="avatar">AB</span> --}}
+                    {{--                <span class="avatar">AC</span> --}}
+                </div>
+
+
+            </nav>
+
+
+            <ul id="list-messages" class="px-1 d-flex flex-col">
+            </ul>
+
+            <form id="form" class="w-100 d-flex flex-col">
+
+                {{--            <label for="input-message">Message:</label> --}}
+                <input id="input-message" class="py-2 pl-1" placeholder="Type a message" type="text">
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
