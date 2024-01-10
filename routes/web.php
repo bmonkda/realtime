@@ -26,5 +26,5 @@ Route::get('/playground', function(){
 });
 
 Route::get('/ws', function(){
-    return view('websockets');
+    return view('websocket');
 });
